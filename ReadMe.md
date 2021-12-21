@@ -1,8 +1,7 @@
-## E-commerce Back End
+# E-commerce Back End
 
- # Profile Generator
   
-  # Table of Content
+  ## Table of Content
   -[description](#description)
   -[installation](#installation)
   -[usage](#usage)
@@ -25,7 +24,6 @@
    
    Please see walk through video here: https://watch.screencastify.com/v/rSodRKRx75cJxLJayOfx
    
-   ![video](https://watch.screencastify.com/v/rSodRKRx75cJxLJayOfx)
 
      
   ## test:

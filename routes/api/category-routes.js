@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
     })
     .catch(err => {
       console.log(err);
-      res.status(500).json(err)
+      res.status(400).json(err)
     });
 });
 
@@ -46,7 +46,7 @@ router.get('/:id', (req, res) => {
     })
     .catch(err => {
       console.log(err);
-      res.status(500).json(err)
+      res.status(400).json(err)
     });
 });
 
@@ -65,13 +65,13 @@ router.post('/', (req, res) => {
     })
     .catch(err => {
       console.log(err);
-      res.status(500).json(err)
+      res.status(400).json(err)
     });
 });
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
-  Category.update({
+  Category.update(req.body, {
    where: {
      id: req.params.id
     }
@@ -85,7 +85,7 @@ router.put('/:id', (req, res) => {
     })
     .catch(err => {
       console.log(err);
-      res.status(500).json(err)
+      res.status(400).json(err)
     });
 });
 
@@ -105,7 +105,7 @@ router.delete('/:id', (req, res) => {
     })
     .catch(err => {
       console.log(err);
-      res.status(500).json(err)
+      res.status(400).json(err)
     });
 });
 
